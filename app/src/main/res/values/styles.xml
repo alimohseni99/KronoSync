@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basknappstil för alla andra -->
+    <style name="BaseButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Anpassad stil för måndagsknappen -->
+    <style name="MondayButtonStyle" parent="BaseButtonStyle">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- Anpassad stil för spinnern -->
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:dropDownVerticalOffset">32dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <!-- Anpassad stil för spinnerns items -->
+    <style name="CustomSpinnerItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+    <!-- Anpassad stil för visa schema knappen -->
+    <style name="CustomShowButton" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/show_custom_button</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!-- Anpassad stil för spinnerns items -->
+    <style name="CustomBackButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">110dp</item>
+        <item name="android:src">@drawable/backbutton</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+    <!-- Anpassad stil för spinnerns items -->
+    <style name="CustomForwardButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:src">@drawable/forwardbutton</item>
+    </style>
+</resources>

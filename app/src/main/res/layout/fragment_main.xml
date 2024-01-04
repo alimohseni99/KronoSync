@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.MainFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/welcomeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/KronoSyncIcon"
+            android:src="@mipmap/logo_kronosync_foreground" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="24dp"
+        android:background="@drawable/gradient_divider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextUserInput"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/hint_enter_program_code"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/favoriteImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/hint_save_favorite"
+            android:padding="12dp"
+            android:src="@drawable/ic_star_border" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/favoritesSpinner"
+            style="@style/CustomSpinner"
+            android:layout_width="310dp"
+            android:layout_height="32dp"
+            android:prompt="@string/select_favorite"
+            android:spinnerMode="dropdown"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/deleteSelectedFavoriteButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/remove_favorite"
+            android:padding="12dp"
+            android:src="@drawable/ic_remove_fav"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favoritesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favoritesSpinner"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/showSchedule"
+        style="@style/CustomShowButton"
+        android:text="@string/show_schedule"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</LinearLayout>

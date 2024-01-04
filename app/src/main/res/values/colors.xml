@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttonNormalColor">#5E5E5E</color>
+    <color name="buttonPressedColor">#9EADAF</color>
+    <color name="leftSideColor">#262626</color>
+    <color name="mainColor">#fff</color>
+    <color name="colorItemBackground">#CFCECF</color>
+    <color name="colorItemText">#333333</color>
+    <color name="colorEvenItem">#E9E9E9</color>
+    <color name="colorOddItem">#CFD8DC</color>
+    <color name="buttonColor">#FF9800</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="lightGray">#B8ABAB</color>
+    <color name="customShowBtnColor">#4FB3EC</color>
+
+
+</resources>

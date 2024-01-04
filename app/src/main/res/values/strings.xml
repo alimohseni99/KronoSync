@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KronoSync</string>
+    <string name="welcome_message">Välkommen till KronoSync</string>
+    <string name="hint_enter_program_code">Ange din programkod här</string>
+    <string name="show_schedule">Visa schema</string>
+    <string name="hint_save_favorite">Spara som favorit</string>
+    <string name="KronoSyncIcon">KronoSync-appikon</string>
+    <string name="hint_text">TGDAY.19104.21</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">O</string>
+    <string name="thursday">T</string>
+    <string name="friday">F</string>
+    <string name="saturday">L</string>
+    <string name="sunday">S</string>
+    <string name="schedule_text">Schema</string>
+    <string name="select_favorite">Välj en favorit</string>
+    <string name="remove_favorite">Ta bort en favorit</string>
+    <string name="week_number">Vecka %1$d</string>
+
+</resources>
