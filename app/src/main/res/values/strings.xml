@@ -17,5 +17,10 @@
     <string name="select_favorite">Välj en favorit</string>
     <string name="remove_favorite">Ta bort en favorit</string>
     <string name="week_number">Vecka %1$d</string>
+    <string name="moment">moment\n</string>
+    <string name="kursensNamn">kursens namn</string>
+    <string name="plats">Plats</string>
+    <string name="startTiden">09:30</string>
+    <string name="slutTiden">09:30</string>
 
 </resources>

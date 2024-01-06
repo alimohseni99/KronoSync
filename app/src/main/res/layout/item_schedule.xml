@@ -16,7 +16,7 @@
             android:id="@+id/scheduleTitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Project Setup"
+            android:text="@string/kursensNamn"
             android:textColor="#000000"
             android:textSize="18sp" />
 
@@ -24,7 +24,7 @@
             android:id="@+id/scheduleDescriptionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zoom meeting"
+            android:text="@string/moment"
             android:textColor="@color/colorItemText"
             android:textSize="14sp" />
 
@@ -32,7 +32,7 @@
             android:id="@+id/scheduleLocationTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10:30"
+            android:text="@string/plats"
             android:textColor="@color/colorItemText"
             android:textSize="16sp" />
 
@@ -40,7 +40,7 @@
             android:id="@+id/scheduleStartTimeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="09:30"
+            android:text="@string/startTiden"
             android:textColor="@color/colorItemText"
             android:textSize="16sp" />
 
@@ -48,7 +48,7 @@
             android:id="@+id/scheduleEndTimeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10:30"
+            android:text="@string/slutTiden"
             android:textColor="@color/colorItemText"
             android:textSize="16sp" />
 

@@ -48,7 +48,7 @@
     </style>
 
 
-    <!-- Anpassad stil för spinnerns items -->
+    <!-- Anpassad stil för back knappen(vecko knappen)-->
     <style name="CustomBackButton">
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>
@@ -57,7 +57,7 @@
         <item name="android:src">@drawable/backbutton</item>
         <item name="backgroundTint">@null</item>
     </style>
-    <!-- Anpassad stil för spinnerns items -->
+    <!-- Anpassad stil för forward knappen(vecko knappen) -->
     <style name="CustomForwardButton">
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>

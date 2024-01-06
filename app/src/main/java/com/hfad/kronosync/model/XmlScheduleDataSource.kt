@@ -94,7 +94,7 @@ class XmlScheduleDataSource : ScheduleDataSource {
                 }
 
                 XmlPullParser.TEXT -> {
-                    if (currentTag == "moment" && eventType == XmlPullParser.TEXT) {
+                    if ((currentTag == "moment") && eventType == XmlPullParser.TEXT) {
                         val htmlContent = xmlPullParser.text
                         val styledText =
                             Html.fromHtml(htmlContent, Html.FROM_HTML_MODE_COMPACT)

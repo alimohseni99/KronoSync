@@ -121,23 +121,31 @@ class MainFragment : Fragment() {
         viewScheduleButton.setOnClickListener {
             val programCode = editTextUserInput.text.toString().trim()
             val selectedFavorite = favoritesSpinner.selectedItem as String?
+            val pattern = Regex("^[A-Z]{5}\\.\\d{5}\\.\\d{2}$")
 
-            println("mainfragments favorit: $selectedFavorite")
             when {
-                programCode.isNotBlank() -> {
+                programCode.isNotBlank() && pattern.matches(programCode) -> {
                     sharedViewModel.selectedProgramCode.value = programCode
                     navigateToScheduleFragment(view)
                 }
 
-                selectedFavorite != null -> {
+                selectedFavorite != null && pattern.matches(selectedFavorite) -> {
                     sharedViewModel.selectedProgramCode.value = selectedFavorite
                     navigateToScheduleFragment(view)
+                }
+
+                programCode.isNotBlank() && !pattern.matches(programCode) -> {
+                    Toast.makeText(
+                        context,
+                        "Ogiltigt format. Använd formatet ABCDE.12345.67",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
 
                 else -> {
                     Toast.makeText(
                         context,
-                        "Ange en programkod eller välj en favorit först",
+                        "Ange en programkod eller välj en från favorit listan först",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -218,7 +226,11 @@ class MainFragment : Fragment() {
 
                 Toast.makeText(context, "Programkod sparad som favorit", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(context, "Programkod är redan en favorit", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    context,
+                    "Programkod är redan sparad som favorit",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         } else {
             // om programkoden inte matchar mönstret, visas det ett felmeddelanded nedan

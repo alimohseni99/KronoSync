@@ -39,18 +39,19 @@
         android:layout_marginVertical="24dp"
         android:background="@drawable/gradient_divider" />
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/editTextUserInput"
-            android:layout_width="310dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:autofillHints=""
             android:background="@drawable/edit_text_background"
             android:hint="@string/hint_enter_program_code"
-            android:inputType="textCapWords"
+            android:inputType="textCapCharacters"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textColorHint="#757575"
@@ -64,17 +65,18 @@
             android:contentDescription="@string/hint_save_favorite"
             android:padding="12dp"
             android:src="@drawable/ic_star_border" />
-    </FrameLayout>
+    </LinearLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Spinner
             android:id="@+id/favoritesSpinner"
             style="@style/CustomSpinner"
-            android:layout_width="310dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
+            android:layout_weight="1"
             android:prompt="@string/select_favorite"
             android:spinnerMode="dropdown"
             tools:ignore="TouchTargetSizeCheck" />
@@ -94,10 +96,9 @@
             android:id="@+id/favoritesRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/favoritesSpinner"
             android:visibility="gone" />
 
-    </FrameLayout>
+    </LinearLayout>
 
 
     <Button
