@@ -233,7 +233,7 @@ class MainFragment : Fragment() {
                 ).show()
             }
         } else {
-            // om programkoden inte matchar mönstret, visas det ett felmeddelanded nedan
+            // om programkoden inte matchar mönstret, visas det felmeddelanded nedan
             Toast.makeText(
                 context,
                 "Ogiltigt format. Använd formatet ABCDE.12345.67",
